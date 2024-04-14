@@ -1,7 +1,9 @@
 const mainDiv = document.getElementById("content");
-const menuDiv = document.createElement('div');
+
 
 export function createMenu () {
+    mainDiv.innerHTML = "";
+    const menuDiv = document.createElement('div');
     mainDiv.appendChild(menuDiv);
     menuDiv.classList.add("menuDiv");
     Object.keys(catalogue).forEach((item) => {
